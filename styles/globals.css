@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+.body {
+  @apply bg-gradient-to-b from-slate-800 to-orange-900;
+}
+
+.menu_mobile {
+  @apply lg:flex lg:pl-0 pl-9 lg:items-center lg:pb-0 pb-12 absolute lg:z-auto z-[-1] left-0 w-full lg:w-auto transition-all bg-gray-900 duration-500 ease-in;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +38,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
